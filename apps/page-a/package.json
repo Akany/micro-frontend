@@ -4,16 +4,18 @@
   "version": "0.0.0",
   "scripts": {
     "build": "npm run build:client & npm run build:server",
-    "build:client": "esbuild ./src/entries/client --bundle --outdir=dist",
+    "build:client": "esbuild ./src/entries/client --bundle --outfile=./dist/client/index.js",
     "build:server": "esbuild ./src/server/routes/index.js --bundle  --outfile=./dist/server.js --platform=node"
   },
   "dependencies": {
+    "@wetravel/atoms": "^0.0.1",
+    "express": "^4.18.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "esbuild": "^0.19.5",
     "@types/react": "^18.2.15",
-    "@types/react-dom": "^18.2.7"
+    "@types/react-dom": "^18.2.7",
+    "esbuild": "^0.19.5"
   }
 }

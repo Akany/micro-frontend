@@ -11,6 +11,7 @@
   "workspaces": [
     "apps/entry",
     "apps/page-a",
-    "apps/page-b"
+    "apps/page-b",
+    "packages/atoms"
   ]
 }

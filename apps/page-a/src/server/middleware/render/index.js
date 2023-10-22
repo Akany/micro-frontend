@@ -19,7 +19,7 @@ export const render = (req, res) => {
         </head>
         <body>
             <div id="root">${app}</div>
-            <script src="client.js"></script>
+            <script src="./client/index.js"></script>
             ${hydrateHtml}
         </body>
         </html>

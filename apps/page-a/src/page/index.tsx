@@ -1,4 +1,5 @@
 import React from "react";
+import { PageName } from '@wetravel/atoms';
 
 interface AppProps {
   name: string;
@@ -7,5 +8,5 @@ interface AppProps {
 export const App = (props: AppProps) => {
   const { name } = props;
 
-  return <>Page {name}</>;
+  return <PageName name={name} />;
 };

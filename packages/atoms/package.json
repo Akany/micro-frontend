@@ -1,0 +1,11 @@
+{
+  "name": "@wetravel/atoms",
+  "version": "0.0.1",
+  "description": "Atom components",
+  "main": "index.js",
+  "scripts": {
+    "release": "npm publish"
+  },
+  "author": "",
+  "license": "ISC"
+}
