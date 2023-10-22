@@ -1,12 +1,22 @@
 {
   "name": "page-b",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "devDependencies": {},
+  "private": true,
+  "version": "0.0.0",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./dist/server.js",
+    "build": "npm run build:client & npm run build:server",
+    "build:client": "esbuild ./src/entries/client --bundle --outfile=./dist/client/index.js",
+    "build:server": "esbuild ./src/server/routes/index.js --bundle  --outfile=./dist/server.js --platform=node"
   },
-  "author": "",
-  "license": "ISC"
+  "dependencies": {
+    "@wetravel/atoms": "^0.0.1",
+    "express": "^4.18.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "esbuild": "^0.19.5"
+  }
 }
