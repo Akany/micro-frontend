@@ -1,5 +1,5 @@
 import React from "react";
-import { PageName } from '@wetravel/atoms';
+import { PageName } from "@wetravel/atoms";
 
 interface AppProps {
   name: string;

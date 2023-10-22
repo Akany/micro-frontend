@@ -1,23 +1,23 @@
-import { render as renderToString } from '../../../entries/server';
+import { render as renderToString } from "../../../entries/server";
 
 export const render = (req, res) => {
-    /**
-     * Each Service could run business logic on a middleware
-     * Enrich App with prepared props.
-     */
-    const props = {
-        name: 'B'
-    };
+  /**
+   * Each Service could run business logic on a middleware
+   * Enrich App with prepared props.
+   */
+  const props = {
+    name: "B",
+  };
 
-    const app = renderToString(props);
+  const app = renderToString(props);
 
-    const hydrateHtml = `
+  const hydrateHtml = `
         <script>
             window.hydrate(${JSON.stringify(props)})
         </script>
     `;
 
-    const html = `
+  const html = `
         <html lang="en">
         <head>
         </head>
@@ -29,5 +29,5 @@ export const render = (req, res) => {
         </html>
     `;
 
-    res.send(html);
-}
+  res.send(html);
+};

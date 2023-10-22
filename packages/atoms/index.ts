@@ -1,1 +1,1 @@
-export { PageName } from './components/pageName';
+export { PageName } from "./components/pageName";

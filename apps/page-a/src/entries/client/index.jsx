@@ -4,7 +4,7 @@ import { App } from '../../page';
 
 const hydrate = (props) => {
     const domNode = document.getElementById('root');
-    hydrateRoot(domNode, <App {...props}/>);
+    hydrateRoot(domNode, <App {...props} />);
 }
 
 window.hydrate = hydrate;
