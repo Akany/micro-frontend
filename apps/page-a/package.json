@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
+    "start": "node ./dist/server.js",
     "build": "npm run build:client & npm run build:server",
     "build:client": "esbuild ./src/entries/client --bundle --outfile=./dist/client/index.js",
     "build:server": "esbuild ./src/server/routes/index.js --bundle  --outfile=./dist/server.js --platform=node"

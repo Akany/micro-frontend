@@ -1,6 +1,10 @@
 import { render as renderToString } from '../../../entries/server';
 
 export const render = (req, res) => {
+    /**
+     * Each Service could run business logic on a middleware
+     * Enrich App with prepared props.
+     */
     const props = {
         name: 'A'
     };
