@@ -1,0 +1,16 @@
+{
+  "name": "micro-frontend",
+  "version": "1.0.0",
+  "description": "micro frontend ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "workspaces": [
+    "apps/entry",
+    "apps/page-a",
+    "apps/page-b"
+  ]
+}

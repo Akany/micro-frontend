@@ -1,0 +1,19 @@
+{
+  "name": "page-a",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "build": "npm run build:client & npm run build:server",
+    "build:client": "esbuild ./src/entries/client --bundle --outdir=dist",
+    "build:server": "esbuild ./src/server/routes/index.js --bundle  --outfile=./dist/server.js --platform=node"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.19.5",
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7"
+  }
+}
